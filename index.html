@@ -4,39 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venta de Motos jr</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Catálogo de Motos JR</title>
+    <link rel="stylesheet" href="estilo1.css">
+    <link rel="stylesheet" href="venta_motos.css">
 </head>
 
 <body>
     <header>
-        <h1>Venta de Motos</h1>
+        <h1>Bienvenidos a Venta de Motos JR</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="login.html">Login</a>
+        </nav>
     </header>
-    <main>
-        <section id="motos">
-            <!-- Aquí se mostrarán las motos disponibles -->
-        </section>
-    </main>
-    <script src="app.js"></script>
-</body>
 
-</html>
-
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venta de Motos</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-    <h1>Venta de Motos</h1>
-    <div id="motos-container"></div>
-
-    <script src="app.js"></script>
+    <section id="catalogo">
+        <h2>Nuestro Catálogo</h2>
+        <div class="moto">
+            <img src="moto1.jpg" alt="Moto 1">
+            <h3>Moto Deportiva 150cc</h3>
+            <p>Precio: $5,000,000 COP</p>
+            <button onclick="agregarCarrito('Moto Deportiva 150cc', 5000000)">Añadir al Carrito</button>
+        </div>
+        <div class="moto">
+            <img src="moto2.jpg" alt="Moto 2">
+            <h3>Moto Scooter 125cc</h3>
+            <p>Precio: $3,500,000 COP</p>
+            <button onclick="agregarCarrito('Moto Scooter 125cc', 3500000)">Añadir al Carrito</button>
+        </div>
+        <div class="moto">
+            <img src="images/moto1.webp" alt="Yamaha R15"> 
+            <h3>Yamaha R15</h3>
+            <p>Precio: $3,500 USD</p>
+            <button>Añadir al carrito</button>
+        </div>        
+        <div class="moto">
+            <img src="images/moto2.jpg" alt="Yamaha MT-10">
+            <h3>Yamaha MT-10</h3>
+            <p>Precio: $12,000 USD</p>
+            <button>Añadir al carrito</button>
+        </div>
+    </section>
+    <script src="javascript.js"></script>
 </body>
 
 </html>

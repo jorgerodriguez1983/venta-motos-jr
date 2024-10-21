@@ -1,0 +1,70 @@
+{
+  "motos": [
+    {
+      "id": 1,
+      "marca": "Yamaha",
+      "modelo": "R15",
+      "precio": 15000,
+      "color": "Azul",
+      "cilindrada": "155cc",
+      "imagen": "yamaha_r15.jpg",
+      "descripcion": "Deportiva, ligera y con un diseño moderno."
+    },
+    {
+      "id": 2,
+      "marca": "Yamaha",
+      "modelo": "MT10",
+      "precio": 20000,
+      "color": "Negra",
+      "cilindrada": "998cc",
+      "imagen": "yamaha_mt10.jpg",
+      "descripcion": "Motonaked de alto rendimiento, ideal para largas rutas."
+    }
+  ],
+  "clientes": [
+    {
+      "id": 1,
+      "nombre": "Juan Perez",
+      "email": "juan.perez@example.com",
+      "telefono": "123456789",
+      "compras": [
+        {
+          "motoId": 1,
+          "fecha": "2024-10-01",
+          "precioCompra": 15000
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nombre": "Maria Rodriguez",
+      "email": "maria.rodriguez@example.com",
+      "telefono": "987654321",
+      "compras": [
+        {
+          "motoId": 2,
+          "fecha": "2024-10-15",
+          "precioCompra": 20000
+        }
+      ]
+    }
+  ],
+  "proveedores": [
+    {
+      "id": 1,
+      "nombre": "MotoRepuestos S.A.",
+      "contacto": "Carlos Gonzalez",
+      "telefono": "123123123",
+      "email": "contacto@motorepuestos.com",
+      "direccion": "Av. Motociclistas, 123"
+    },
+    {
+      "id": 2,
+      "nombre": "MotoParts Ltda.",
+      "contacto": "Laura Martinez",
+      "telefono": "321321321",
+      "email": "ventas@motoparts.com",
+      "direccion": "Calle Motos, 456"
+    }
+  ]
+}

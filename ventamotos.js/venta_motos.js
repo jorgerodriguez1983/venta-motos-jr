@@ -53,3 +53,32 @@ window.onload = function () {
   mostrarMotos();
   setInterval(cambiarImagenCarrusel, 3000); // Cambiar imagen cada 3 segundos
 };
+
+fetch('motos.json')
+  .then(response => response.json())
+  .then(data => {
+    mostrarMotos(data.motos);
+  })
+  .catch(error => console.error('Error al cargar los datos:', error));
+
+// Mostrar las motos en la página
+function mostrarMotos(motos) {
+  const contenedorMotos = document.getElementById('motos-destacadas');
+  motos.forEach(moto => {
+    const motoDiv = document.createElement('div');
+    motoDiv.className = 'moto-card';
+    motoDiv.innerHTML = `
+      <img src="img/${moto.imagen}" alt="${moto.modelo}">
+      <h3>${moto.marca} ${moto.modelo}</h3>
+      <p>Precio: $${moto.precio}</p>
+      <p>${moto.descripcion}</p>
+      <button onclick="comprarMoto(${moto.id})">Comprar</button>
+    `;
+    contenedorMotos.appendChild(motoDiv);
+  });
+}
+
+// Función para simular la compra de una moto
+function comprarMoto(id) {
+  alert(`Has seleccionado la moto con ID: ${id}`);
+}

@@ -1,0 +1,182 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Menú de navegación */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #666;
+}
+
+/* Sección de cards de motos */
+.moto-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.moto-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.moto-card h3 {
+    color: #333;
+    margin-top: 15px;
+}
+
+.moto-card p {
+    color: #555;
+    margin: 10px 0;
+}
+
+.moto-card button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.moto-card button:hover {
+    background-color: #555;
+}
+
+/* Carrusel de imágenes */
+.carrusel {
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+.carrusel img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrusel img:hover {
+    transform: scale(1.05);
+}
+
+/* Productos destacados */
+.productos-destacados {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #eee;
+}
+
+.productos-destacados h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Reseñas de clientes */
+.reseñas {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.reseña {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 30%;
+}
+
+.reseña p {
+    font-style: italic;
+    color: #555;
+}
+
+.reseña h4 {
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Página de Login */
+.login {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.login button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login button:hover {
+    background-color: #555;
+}
